@@ -29,7 +29,7 @@ const Footer = () => {
 
       {/* contact us */}
 
-      <div>
+      <div className=" lg:h-14 md:h-14 lg:w-44 md:w-44 h-10 w-32 mx-auto">
         <Link href="mailto:coders.club@dypiemr.ac.in" className="flex my-10">
           <button className="mx-auto border-2 rounded-full lg:h-14 md:h-14 lg:w-44 md:w-44 h-10 w-32 border-[#9747FF] font-inter font-normal text-base text-[#9747FF]">
             CONTACT US
@@ -179,6 +179,14 @@ const Footer = () => {
             className="hover:text-[#909090]"
           >
             Bhupesh Sahu{" "}
+          </Link>
+          &  <Link
+            href="https://www.linkedin.com/in/rohit-waghmode-7312b3254/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#909090]"
+          >
+            Rohit Waghmode
           </Link>
         </p>
       </div>

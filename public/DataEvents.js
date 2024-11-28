@@ -1,5 +1,11 @@
 const DataEvents = [
     {
+        eventImage: "/images/event_17-10-24.jpg",
+        eventName: "Personalized LinkedIn Session",
+        eventDate: "17/10/2024",
+        eventDescription: "The personalized LinkedIn session helped Coders Club members create and optimize their profiles, showcasing their skills and connecting with opportunities. Through expert tips and hands-on guidance, participants learned to craft compelling profiles, expand their networks, and build confidence in their professional journey. It was an engaging and insightful experience, fostering growth and collaboration.",
+    }, 
+    {
         eventImage: "/images/event_29-09-24.jpeg",
         eventName: "Club Bonding Activity",
         eventDate: "29/09/2024",

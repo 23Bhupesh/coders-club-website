@@ -18,7 +18,7 @@ const Index = () => {
       });
 
       if (response.ok) {
-        alert("Subscribed to newsletter!");
+        alert("We have sent you an email. Please check your inbox and verify your email address!");
         setEmail(""); // Clear email input field
       } else {
         const errorData = await response.json();

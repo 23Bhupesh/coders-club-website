@@ -14,7 +14,7 @@ const CustomCursor: React.FC = () => {
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
   const [trail, setTrail] = useState<TrailItem[]>([]);
 
-  const cursorSize = 250;
+  const cursorSize = 200;
   const halfSize = cursorSize / 2;
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const CustomCursor: React.FC = () => {
           }))
           .filter((item) => item.opacity > 0)
       );
-    }, 50);
+    }, 25);
 
     return () => clearInterval(interval);
   }, []);
@@ -88,8 +88,8 @@ const CustomCursor: React.FC = () => {
           top: position.y,
           left: position.x,
           background:
-            'radial-gradient(circle, rgba(186,43,227,1) 0%, rgba(186,43,227,0.3) 50%, rgba(0,0,0,0) 80%)',
-          filter: 'blur(200px)',
+            'radial-gradient(circle, rgba(95, 15, 100, 1) 0%, rgba(95, 15, 100, 0.3) 40%, rgba(0, 0, 0, 0) 60%)',
+          filter: 'blur(100px)',
         }}
       />
 
@@ -102,10 +102,10 @@ const CustomCursor: React.FC = () => {
             top: item.y,
             left: item.x,
             background:
-              'radial-gradient(circle, rgba(186,43,227,0.6) 0%, rgba(186,43,227,0.2) 60%, rgba(0,0,0,0) 90%)',
-            filter: 'blur(15px)',
+              'radial-gradient(circle, rgba(95, 15, 100, 0.6) 0%, rgba(95, 15, 100, 0.2) 40%, rgba(0, 0, 0, 0) 70%)',
+            filter: 'blur(10px)',
             opacity: item.opacity,
-            transition: 'opacity 0.1s ease-out',
+            transition: 'opacity 0.05s ease-out',
           }}
         />
       ))}

@@ -29,12 +29,12 @@ const DataTeam2024 = [
         domain: "Secretary",
         linkedin:"https://www.linkedin.com/in/abhijit-abhang/"
     },
-    {
-        img: "/images/24_img_swapnilBaranwal.jpg",
-        name: "swapnil Baranwal",
-        domain: "Jt. Club Abvisor",
-        linkedin:"https://www.linkedin.com/in/baranwalswapnil/"
-    },
+    // {
+    //     img: "/images/24_img_swapnilBaranwal.jpg",
+    //     name: "swapnil Baranwal",
+    //     domain: "Jt. Club Abvisor",
+    //     linkedin:"https://www.linkedin.com/in/baranwalswapnil/"
+    // },
     {
         img: "/images/24_img_yashitaGiri.jpg",
         name: "Yashita Giri",
@@ -68,6 +68,12 @@ const DataTeam2024 = [
     {
         img: "/images/24_img_atharvaJagtap.jpg",
         name: "Atharva Jagtap",
+        domain: "DSA coordinator",
+        linkedin:"https://www.linkedin.com/in/atharva-jagtap-905934229/"
+    },
+    {
+        img: "/images/24_img_fazal_sulphy.jpg",
+        name: "Fazal Sulphy",
         domain: "DSA coordinator",
         linkedin:"https://www.linkedin.com/in/atharva-jagtap-905934229/"
     },
