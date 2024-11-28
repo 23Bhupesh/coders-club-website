@@ -11,7 +11,7 @@ interface RecentEventProps {
 const RecentEvent: React.FC<RecentEventProps> = (props) => {
   return (
     <div className="h-auto w-full my-16">
-      <div className="lg:flex md:flex lg:h-80 md:h-80 h-auto lg:w-[80%] md:w-[90%] w-[90%] gap-10 mx-auto lg:border-0 md:border-0 border p-2 rounded-lg shadow-lg shadow-transparent hover:shadow-[#7e1184]">
+      <div className="lg:flex md:flex lg:h-80 md:h-80 h-auto lg:w-[1008px] md:w-[90%] w-[90%] gap-10 mx-auto lg:border-0 md:border-0 border p-2 rounded-lg shadow-lg shadow-transparent hover:shadow-[#7e1184]">
           <Image
             src={props.eventImage}
             height={320}
