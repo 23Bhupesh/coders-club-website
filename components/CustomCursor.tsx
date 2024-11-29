@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
+// Type declaration for Position
 interface Position {
   x: number;
   y: number;
 }
 
-interface TrailItem extends Position {
-  opacity: number;
-  fadeIn: boolean;
-}
-
 const CustomCursor: React.FC = () => {
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
-  const [trail, setTrail] = useState<TrailItem[]>([]);
 
-  const cursorSize = 200;
+  const cursorSize = 200; // Cursor size
   const halfSize = cursorSize / 2;
 
   useEffect(() => {
@@ -25,10 +20,6 @@ const CustomCursor: React.FC = () => {
 
       requestId = requestAnimationFrame(() => {
         setPosition({ x: e.clientX, y: e.clientY });
-        setTrail((prevTrail) => [
-          ...prevTrail,
-          { x: e.clientX, y: e.clientY, opacity: 0, fadeIn: true },
-        ]);
       });
     };
 
@@ -40,24 +31,6 @@ const CustomCursor: React.FC = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTrail((prevTrail) =>
-        prevTrail
-          .map((item) => ({
-            ...item,
-            opacity: item.fadeIn
-              ? Math.min(item.opacity + 0.05, 1)
-              : item.opacity - 0.05,
-            fadeIn: item.fadeIn && item.opacity < 1,
-          }))
-          .filter((item) => item.opacity > 0)
-      );
-    }, 25);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const commonStyles = {
     position: 'fixed' as const,
     width: `${cursorSize}px`,
@@ -66,50 +39,20 @@ const CustomCursor: React.FC = () => {
     marginTop: `-${halfSize}px`,
     pointerEvents: 'none' as const,
     borderRadius: '50%',
-    zIndex: 0, // Set base z-index to 0
+    zIndex: -1, // Ensure it stays behind content at all times
+    background:
+      'radial-gradient(circle, rgb(204, 51, 204) 30%, rgba(204, 51, 204, 0.3) 60%, rgba(0,0,0,0) 60%)',
+    filter: 'blur(110px)', // Adjust blur as needed
   };
 
   return (
-    <div 
+    <div
       style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        pointerEvents: 'none',
-        zIndex: 1, // Container z-index
+        ...commonStyles,
+        top: position.y,
+        left: position.x,
       }}
-    >
-      {/* Main Cursor */}
-      <div
-        style={{
-          ...commonStyles,
-          top: position.y,
-          left: position.x,
-          background:
-            'radial-gradient(circle, rgba(95, 15, 100, 1) 0%, rgba(95, 15, 100, 0.3) 40%, rgba(0, 0, 0, 0) 60%)',
-          filter: 'blur(100px)',
-        }}
-      />
-
-      {/* Cursor Trail */}
-      {trail.map((item, index) => (
-        <div
-          key={index}
-          style={{
-            ...commonStyles,
-            top: item.y,
-            left: item.x,
-            background:
-              'radial-gradient(circle, rgba(95, 15, 100, 0.6) 0%, rgba(95, 15, 100, 0.2) 40%, rgba(0, 0, 0, 0) 70%)',
-            filter: 'blur(10px)',
-            opacity: item.opacity,
-            transition: 'opacity 0.05s ease-out',
-          }}
-        />
-      ))}
-    </div>
+    />
   );
 };
 

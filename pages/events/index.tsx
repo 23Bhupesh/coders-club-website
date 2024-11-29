@@ -1,5 +1,4 @@
 import EventCarousel from "@/components/EventCarousel";
-import Navbar from "@/components/Navbar";
 import RecentEvent from "@/components/RecentEvent";
 import DataEvents from "../../public/DataEvents";
 import Image from "next/image";
@@ -8,7 +7,6 @@ import React from "react";
 const index = () => {
   return (
     <div>
-      <Navbar />
       <div className="text-white pt-20 w-full">
         <div className="h-auto w-full">
           <div className="w-full h-auto">

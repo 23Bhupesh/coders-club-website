@@ -5,12 +5,10 @@ import DataFaculty from "../../public/DataFaculty";
 import Image from "next/image";
 import Link from "next/link";
 import ImgCard from "@/components/ImgCard";
-import Navbar from "@/components/Navbar";
 
 const index = () => {
   return (
     <div className="bg-custom-bg">
-      <Navbar />
       <div className="font-lemonmilk text-white pt-20">
         {/* headline div */}
         <div className="lg:h-screen md:h-screen h-auto w-full flex justify-center items-center lg:my-0 md:my-0 my-20">

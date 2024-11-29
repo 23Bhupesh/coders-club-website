@@ -5,7 +5,6 @@ import DataEvents from "../public/DataEvents";
 import MarqueeComponent_1 from "@/components/MarqueeComponent_1";
 import RecentEvent from "@/components/RecentEvent";
 import MarqueeComponent_2 from "@/components/MarqueeComponent_2";
-import Navbar from "@/components/Navbar";
 import Gallery from "@/components/Gallery";
 import AboutUs from "@/components/AboutUs";
 
@@ -14,7 +13,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="bg-custom-bg bg-center bg-cover">
-      <Navbar />
       <div className="text-white pt-20 overflow-hidden">
         {/* Hero Section */}
         <div className="lg:h-screen md:h-screen h-auto w-full flex flex-col justify-center items-center lg:mt-0 md:mt-0 mt-20">

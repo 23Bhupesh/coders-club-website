@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React, { useState, FormEvent } from "react";
 
@@ -32,7 +31,6 @@ const Index = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="w-full lg:h-screen md:h-screen h-auto pt-20">
         <div className="text-white flex flex-col items-center">
           {/* Header */}

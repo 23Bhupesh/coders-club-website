@@ -17,7 +17,7 @@ import { Input } from "postcss";
 
 const Navbar = () => {
   return (
-    <div className="text-white w-full fixed z-50 h-20 flex justify-between lg:px-10 md:px-10 px-5 bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000]">
+    <div className="text-white w-full fixed z-20 h-20 flex justify-between lg:px-10 md:px-10 px-5 bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000]">
     <CustomCursor />
       <div className="flex items-center gap-2 mt-2">
         <div className="hidden lg:block md:block ">
