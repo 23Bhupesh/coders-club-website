@@ -18,7 +18,7 @@ import { Input } from "postcss";
 const Navbar = () => {
   return (
     <div className="text-white w-full fixed z-20 h-20 flex justify-between lg:px-10 md:px-10 px-5 bg-custom-bg bg-cover bg-center bg-no-repeat bg-[#000000]">
-    <CustomCursor />
+      <CustomCursor />
       <div className="flex items-center gap-2 mt-2">
         <div className="hidden lg:block md:block ">
           <Image
@@ -45,27 +45,35 @@ const Navbar = () => {
           <SheetContent className="text-white w-full h-screen flex flex-col justify-center items-center">
             <div className="flex flex-col h-auto w-auto justify-center items-center">
               <div className="h-auto flex flex-col gap-4 w-auto my-auto text-center font-inter text-2xl leading-loose tracking-wider font-medium">
-                <Link href="/" className="h-14 flex flex-col justify-center">
-                  HOME
-                </Link>
+                <SheetClose asChild>
+                  <Link href="/" className="h-14 flex flex-col justify-center">
+                    HOME
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
                 <Link
                   href="/team"
                   className="h-14 flex flex-col justify-center"
                 >
                   TEAM
                 </Link>
+                </SheetClose>
+                <SheetClose asChild>
                 <Link
                   href="/events"
                   className="h-14 flex flex-col justify-center"
                 >
                   EVENTS
                 </Link>
+                </SheetClose>
+                <SheetClose asChild>
                 <Link
                   href="/newsletter"
                   className="h-14 flex flex-col justify-center"
                 >
                   NEWSLETTER
                 </Link>
+                </SheetClose>
               </div>
               <div className="w-auto mx-auto lg:mx-0 md:mx-0 flex gap-4 mb-4 fixed bottom-20">
                 <Link
