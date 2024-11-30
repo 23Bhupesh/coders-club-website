@@ -26,11 +26,6 @@ const DataEvents = [
         eventDate: "08/02/2024, 09/02/2024",
         eventDescription: "An E-Sports Valorant gaming competition was hosted, creating a memorable experience for all participants. Gamers engaged in thrilling matches that not only showcased their skills but also enhanced their teamwork abilities. The event successfully combined excitement with skill-building, making it a standout experience for everyone involved and fostering a sense of community among players.",
     }, {
-        eventImage: "/images/event_07-09-23.jpeg",
-        eventName: "3-Day Python workshop",
-        eventDate: "07/09/2023, 08/09/2023, 11/09/2023",
-        eventDescription: "The Three-Day Python Workshop, led by Mr. Tushar Kute from MITU Skillogies, introduced participants to the fundamentals of Python programming. The workshop explored key areas such as data science, web development, and automation, providing hands-on experience and establishing a solid foundation for future Python projects while fostering a vibrant learning community among attendees.",
-    }, {
         eventImage: "/images/event_27-10-23.jpg",
         eventName: "Clarity",
         eventDate: "27/10/2023",
@@ -45,6 +40,11 @@ const DataEvents = [
         eventName: "Click 'A' Pic",
         eventDate: "13/09/2023",
         eventDescription: "The event provided a delightful opportunity for fun and camaraderie among club members and the Board of Directors (BOD). Participants enjoyed a lively atmosphere as they captured memorable moments through group photos and individual snapshots, celebrating the vibrant community. This engaging photo session not only strengthened team bonds but also created lasting memories, showcasing the spirit of collaboration and joy within the club.",
+    }, {
+        eventImage: "/images/event_07-09-23.jpeg",
+        eventName: "3-Day Python workshop",
+        eventDate: "07/09/2023, 08/09/2023, 11/09/2023",
+        eventDescription: "The Three-Day Python Workshop, led by Mr. Tushar Kute from MITU Skillogies, introduced participants to the fundamentals of Python programming. The workshop explored key areas such as data science, web development, and automation, providing hands-on experience and establishing a solid foundation for future Python projects while fostering a vibrant learning community among attendees.",
     }, {
         eventImage: "/images/event_02-08-23.jpeg",
         eventName: "Profile Building & Career Opportunities Workshop",
