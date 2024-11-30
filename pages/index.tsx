@@ -20,7 +20,7 @@ export default function Home() {
             Hello people!
           </p>
           <h1 className="lg:w-[67%] md:w-[67%] w-[91%] lg:h-72 md:h-72 h-auto font-inter font-bold lg:text-8xl md:text-7xl text-5xl leading-normal text-left lg:px-0 md:px-0 px-2 ">
-            We&apos;re Student&apos;s welface club.
+            We&apos;re Student&apos;s welfare club.
           </h1>
 
           <div className="flex lg:gap-4 md:gap-4 gap-2 lg:my-0 md:my-0 my-4 lg:mx-0 md:mx-0 mx-auto lg:px-0 md:px-0 px-5">
