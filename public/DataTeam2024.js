@@ -213,7 +213,7 @@ const DataTeam2024 = [
         img: "/images/24_img_omkarKawale.jpg",
         name: "omkar Kawale",
         domain: "media coordinator",
-        linkedin:"https://www.linkedin.com/in/omkar-kawale-5b194b292/"
+        linkedin:"https://www.linkedin.com/in/omkar-kawale-b62360340/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
         img: "/images/24_img_aryaveerRajput.jpg",
@@ -231,7 +231,7 @@ const DataTeam2024 = [
         img: "/images/24_img_swapnilMote.jpg",
         name: "swapnil Mote",
         domain: "media coordinator",
-        linkedin:"https://www.linkedin.com/in/swapnil-mote-22911728b/"
+        linkedin:"https://www.linkedin.com/in/swapnil-prabhakar-mote-22911728b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         img: "/images/24_img_mihirDolas.jpg",
@@ -381,7 +381,7 @@ const DataTeam2024 = [
         img: "/images/24_img_atharvDhane.jpg",
         name: "atharv Dhane",
         domain: "Club Member",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/atharv-dhane-0944a128b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
         img: "/images/24_img_nishikaChawla.jpg",
@@ -441,7 +441,7 @@ const DataTeam2024 = [
         img: "/images/24_img_shivanjaliKadam.jpg",
         name: "shivanjali Kadam",
         domain: "Club Member",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/shivanjali-kadam-867064325/"
     },
     {
         img: "/images/24_img_mayurSadguru.jpg",
