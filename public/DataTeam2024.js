@@ -171,7 +171,7 @@ const DataTeam2024 = [
         img: "/images/24_img_vedantShinde.jpg",
         name: "vedant Shinde",
         domain: "management coordinator",
-        linkedin:"https://www.linkedin.com/in/vedant-s-a0218b225/"
+        linkedin:"https://www.linkedin.com/in/vedantshinde14?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         img: "/images/24_img_punitTodkar.jpg",
@@ -243,7 +243,7 @@ const DataTeam2024 = [
         img: "/images/24_img_sanketPatil.jpg",
         name: "Sanket Patil",
         domain: "editor",
-        linkedin:""
+        linkedin:"https://www.linkedin.com/in/sanket-patil-143796237/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         img: "/images/24_img_sanikaDeshkar.jpg",
